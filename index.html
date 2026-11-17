@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#06111e">
+  <title>TITANIC — The Lost Legend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <a href="#home" class="logo" id="logo">RMS TITANIC<span>.</span></a>
+  <div class="nav-links">
+    <a href="#story">Geschichte</a>
+    <a href="#facts">Fakten</a>
+    <a href="#journey">Reise</a>
+    <a href="#mystery">Geheimnisse</a>
+  </div>
+  <button class="nav-secret" id="archiveButton">ARCHIV</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="eyebrow">THE LEGEND OF THE ATLANTIC · 1912</div>
+    <h1 id="mainTitle">TITANIC</h1>
+    <div class="gold-line"></div>
+    <p class="hero-subtitle">
+      A JOURNEY THAT NEVER ENDED
+    </p>
+    <p class="hero-description">
+      Entdecke die Geschichte des berühmtesten Schiffes der Welt.
+      Doch Vorsicht: Nicht alles ist so, wie es scheint.
+    </p>
+    <a href="#story" class="main-button">DIE REISE BEGINNEN ↓</a>
+  </div>
+  <div class="hero-bottom">
+    <span>41°43′N 49°56′W</span>
+    <span>ATLANTIC OCEAN</span>
+    <span>1912 — FOREVER</span>
+  </div>
+  <div class="floating-ice" id="floatingIce">❄</div>
+</header>
+
+<!-- INTRO -->
+<section class="intro section" id="story">
+  <div class="section-label">01 — THE BEGINNING</div>
+  <h2>Eine Legende.<br><span>Ein Schicksal.</span></h2>
+
+  <div class="intro-grid">
+    <div>
+      <p class="large-text">
+        Sie war ein Meisterwerk ihrer Zeit.
+        Ein schwimmender Palast. Ein Symbol für Luxus,
+        Technik und menschliche Träume.
+      </p>
+      <p>
+        Die RMS Titanic begann am 10. April 1912 ihre
+        Jungfernfahrt von Southampton nach New York.
+        In der Nacht vom 14. auf den 15. April kollidierte
+        sie mit einem Eisberg und sank im Nordatlantik.
+      </p>
+      <p>
+        Über 1.500 Menschen verloren ihr Leben.
+        Ihre Geschichten bleiben unvergessen.
+      </p>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">“</span>
+      <p>Some stories never sink.</p>
+      <span class="quote-caption">THE TITANIC LEGACY</span>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section class="facts section" id="facts">
+  <div class="section-label">02 — THE SHIP</div>
+  <h2>Ein schwimmender <span>Palast.</span></h2>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span>269 m</span>
+      <p>Länge des Schiffes</p>
+    </div>
+    <div class="stat-card">
+      <span>2.224</span>
+      <p>Menschen ungefähr an Bord</p>
+    </div>
+    <div class="stat-card">
+      <span>28 kn</span>
+      <p>Ungefähre Höchstgeschwindigkeit</p>
+    </div>
+    <div class="stat-card">
+      <span>3.800 m</span>
+      <p>Tiefe des Wracks</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="journey section" id="journey">
+  <div class="section-label">03 — THE LAST VOYAGE</div>
+  <h2>Die letzte <span>Reise.</span></h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>10. APRIL 1912</span>
+      <h3>Southampton</h3>
+      <p>Die Titanic beginnt ihre Jungfernfahrt.</p>
+    </div>
+    <div class="timeline-item">
+      <span>11. APRIL 1912</span>
+      <h3>Queenstown</h3>
+      <p>Der letzte Zwischenstopp vor dem Atlantik.</p>
+    </div>
+    <div class="timeline-item">
+      <span>14. APRIL 1912 · 23:40</span>
+      <h3>Der Eisberg</h3>
+      <p>Die Titanic kollidiert mit einem Eisberg.</p>
+    </div>
+    <div class="timeline-item">
+      <span>15. APRIL 1912 · 02:20</span>
+      <h3>Das Ende</h3>
+      <p>Das Schiff verschwindet im Nordatlantik.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MYSTERY -->
+<section class="mystery section" id="mystery">
+  <div class="section-label">04 — UNKNOWN STORIES</div>
+  <h2>Was verbirgt sich <span>im Dunkeln?</span></h2>
+  <p class="section-intro">
+    Die Website enthält geheime Hinweise. Manche sind leicht zu
+    entdecken. Andere verlangen Geduld und Kombinationsgabe.
+  </p>
+
+  <div class="mystery-grid">
+    <div class="mystery-card" id="mysteryCard">
+      <span>01 / UNKNOWN</span>
+      <h3>Das verschwundene Dokument</h3>
+      <p>Ein Dokument wurde aus dem Archiv entfernt.</p>
+      <button onclick="openArchive()">UNTERSUCHEN ↗</button>
+    </div>
+    <div class="mystery-card">
+      <span>02 / UNKNOWN</span>
+      <h3>Die letzte Nachricht</h3>
+      <p>Eine Nachricht wartet darauf, entschlüsselt zu werden.</p>
+      <button onclick="openMorse()">ENTSCHLÜSSELN ↗</button>
+    </div>
+    <div class="mystery-card">
+      <span>03 / UNKNOWN</span>
+      <h3>Die geheime Passagierakte</h3>
+      <p>Ein Name ist in keiner offiziellen Liste zu finden.</p>
+      <button onclick="openPassenger()">AKTE ÖFFNEN ↗</button>
+    </div>
+  </div>
+</section>
+
+<!-- UNDERWATER -->
+<section class="underwater section" id="wreck">
+  <div class="section-label">05 — 3.800 METERS BELOW</div>
+  <h2>Unter der <span>Oberfläche.</span></h2>
+  <p>
+    Tief unten im Atlantik liegt das Wrack der Titanic.
+    Eine stille Erinnerung an die letzte Reise.
+  </p>
+  <button class="main-button" onclick="activateDive()">
+    EXPEDITION STARTEN
+  </button>
+  <div id="diveResult"></div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz section" id="quiz">
+  <div class="section-label">06 — KNOW YOUR HISTORY</div>
+  <h2>Das Titanic-<span>Quiz.</span></h2>
+  <p id="quizQuestion">Wann begann die Jungfernfahrt?</p>
+  <div class="quiz-options">
+    <button onclick="answerQuiz(0)">10. April 1912</button>
+    <button onclick="answerQuiz(1)">14. April 1912</button>
+    <button onclick="answerQuiz(2)">15. April 1912</button>
+  </div>
+  <p id="quizResult"></p>
+</section>
+
+<!-- SECRET COLLECTION -->
+<section class="collection section" id="collection">
+  <div class="section-label">07 — YOUR DISCOVERIES</div>
+  <h2>Deine <span>Sammlung.</span></h2>
+  <div class="collection-progress">
+    <div class="progress-info">
+      <span>GEFUNDENE GEHEIMNISSE</span>
+      <span id="progressText">0 / 30</span>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+  <div id="collectionGrid" class="collection-grid"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">RMS TITANIC</div>
+  <p>THE LEGEND NEVER SINKS.</p>
+  <p class="copyright">AN INTERACTIVE HISTORICAL PROJECT · 2026</p>
+  <span id="footerSecret">1912</span>
+</footer>
+
+<!-- ARCHIVE MODAL -->
+<div class="modal" id="archiveModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModals()">✕</button>
+    <div class="section-label">CLASSIFIED DOCUMENT</div>
+    <h2>Geheimes <span>Archiv.</span></h2>
+    <p>Aktennummer: RMS-1912-404</p>
+    <p>Status: ARCHIVIERT</p>
+    <p>Die Vergangenheit ist niemals vollständig verschwunden.</p>
+    <input id="archivePassword" placeholder="Geheimcode eingeben...">
+    <button onclick="checkPassword()">ZUGANG PRÜFEN</button>
+    <p id="passwordResult"></p>
+  </div>
+</div>
+
+<!-- MORSE MODAL -->
+<div class="modal" id="morseModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModals()">✕</button>
+    <h2>Die letzte <span>Nachricht.</span></h2>
+    <p>Entschlüssele diesen Morsecode:</p>
+    <h3 class="morse-code">... --- ...</h3>
+    <input id="morseAnswer" placeholder="Deine Antwort">
+    <button onclick="checkMorse()">ABSENDEN</button>
+    <p id="morseResult"></p>
+  </div>
+</div>
+
+<!-- PASSENGER MODAL -->
+<div class="modal" id="passengerModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModals()">✕</button>
+    <h2>Passagierakte <span>404.</span></h2>
+    <p>Name: Unbekannt</p>
+    <p>Kabine: Unbekannt</p>
+    <p>Letzter Eintrag: 14. April 1912</p>
+    <p class="redacted">[DOKUMENT UNVOLLSTÄNDIG]</p>
+    <button onclick="unlockEgg(12)">AKTE UNTERSUCHEN</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<!-- PROGRESS HUD -->
+<div class="hud">
+  <span>🔐 <b id="hudCount">0</b>/30</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
